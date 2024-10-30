@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 노래방 성격 유형은?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <img src="title.png" alt="나의 노래방 성격 유형은?" id="title-image">
+
+    <!-- 시작하기 버튼 -->
+    <button id="start-button">시작하기</button>
+
+    <!-- 질문 컨테이너 (처음에는 숨김) -->
+    <div id="question-container" style="display: none;">
+        <h2 id="question"></h2>
+        <button onclick="selectAnswer('A')" id="optionA"></button>
+        <button onclick="selectAnswer('B')" id="optionB"></button>
+        <button onclick="selectAnswer('C')" id="optionC"></button>
+        <button onclick="selectAnswer('D')" id="optionD"></button>
+        <p>문항: <span id="current-question"></span> / <span id="total-questions"></span></p>
+    </div>
+
+    <!-- 결과 보기 버튼 (처음에는 숨김) -->
+    <button id="result-button" onclick="showResult()" style="display: none;">결과 보기</button>
+
+    <!-- 결과 컨테이너 (처음에는 숨김) -->
+    <div id="result-container" style="display: none;">
+        <!-- 결과 내용 -->
+        <h2 id="character-name"></h2>
+        <p><span id="karaoke-behavior"></span></p>
+        <img id="character-image" src="" alt="">
+        <p><span id="character-description"></span></p>
+        <p><span id="encouragement-message"></span></p>
+        <p><strong>추천곡:</strong> <span id="song-recommendation"></span></p>
+
+        <!-- 호환/비호환 유형 -->
+        <div class="compatible-incompatible-container">
+            <div>
+                <p class="compatible-title"><strong>잘 어울리는 유형</strong></p>
+                <img class="compatible-img" src="" alt="">
+                <p id="compatible-types"></p>
+            </div>
+            <div>
+                <p class="incompatible-title"><strong>맞지 않는 유형</strong></p>
+                <img class="incompatible-img" src="" alt="">
+                <p id="incompatible-types"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- script.js 파일 연결 -->
+    <script src="script.js"></script>
+</body>
+</html>

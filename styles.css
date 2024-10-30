@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #6a0bad;
+}
+
+#title-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-top: 20px;
+}
+
+#start-button {
+    margin: 20px auto;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: white;
+    color: #6a0bad;
+    border: none;
+    border-radius: 8px;
+    display: block;
+}
+
+#start-button:hover {
+    background-color: #ca65f8;
+}
+
+#question-container {
+    margin: 20px auto; /* Centers the container horizontally */
+    max-width: 600px; /* Sets a maximum width for better control */
+    padding: 20px; /* Adds padding for content spacing */
+    background-color: rgba(255, 255, 255, 0.1); /* Optional: Add slight background for contrast */
+    border-radius: 8px; /* Rounds the corners for a softer look */
+    text-align: left; /* Aligns text to the left */
+}
+
+#question {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: white; /* 텍스트를 흰색으로 설정 */
+    white-space: normal; /* 텍스트가 자동으로 줄바꿈되도록 설정 */
+    word-wrap: break-word; /* 긴 단어도 줄바꿈되도록 설정 */
+}
+
+button {
+    margin: 10px 0;
+    padding: 15px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    width: calc(100% - 40px);
+    max-width: 100%;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    color: #6a0bad;
+}
+
+button:hover {
+    background-color: #ca65f8;
+}
+
+#result-button {
+    background-color: white;
+}
+
+#result-button:hover {
+    background-color: #ca65f8;
+}
+
+#result-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white; 
+    border-radius: 8px; 
+}
+
+#character-name {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.compatible-incompatible-container {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.compatible-incompatible-container > div {
+    flex-basis: 45%;
+}
+
+.compatible-img,
+.incompatible-img {
+    width: 60px; 
+    height: 60px; 
+}
+
+/* 모바일 최적화 */
+@media (max-width: 600px) {
+   body {
+       font-size :14px
+   }
+
+   #character-name {
+       font-size :1.5em
+   }
+
+   button {
+       font-size :0.9em
+   }
+
+   .compatible-incompatible-container > div {
+       flex-basis :100%
+   }
+}
+
+#character-description {
+    display: block; /* span을 block 요소로 변경하여 너비를 가질 수 있도록 함 */
+    width: 100%; /* 부모 컨테이너의 너비에 맞춤 */
+    max-width: 300px; /* 최대 너비를 설정하여 가독성 유지 */
+    margin: 0 auto; /* 중앙 정렬 */
+    word-wrap: break-word; /* 긴 단어도 잘리면서 줄바꿈되도록 설정 */
+    white-space: normal; /* 텍스트가 자동으로 줄바꿈되도록 설정 */
+    line-height: 1.5; /* 줄 간격을 설정하여 가독성 향상 */
+}
+
