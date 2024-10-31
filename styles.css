@@ -89,19 +89,26 @@ button:hover {
     height: auto;
     margin-bottom: 20px;
 }
+
+@media (max-width: 600px) {
+    #character-image {
+        max-width: 150px; /* 모바일 화면에서 더 작은 최대 너비 */
+    }
+}
+
 .compatible-incompatible-container {
     display: flex;
     justify-content: space-between; 
 }
 
 .compatible-incompatible-container > div {
-    flex-basis: 45%;
+    width: 50%; /* 좌우 요소가 화면의 50%씩 차지하게 함 */
 }
 
 .compatible-img,
 .incompatible-img {
-    width: 200px; 
-    height: 200px; 
+    width: 100%; /* 이미지가 부모 요소의 너비를 꽉 차도록 설정 */
+    height: auto; /* 비율을 유지하면서 자동으로 조정 */
 }
 
 /* 모바일 최적화 */
