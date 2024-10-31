@@ -82,7 +82,12 @@ button:hover {
     font-size: 1.8em;
     font-weight: bold;
 }
-
+.character-image {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+}
 .compatible-incompatible-container {
     display: flex;
     justify-content: space-between; 
@@ -94,8 +99,8 @@ button:hover {
 
 .compatible-img,
 .incompatible-img {
-    width: 60px; 
-    height: 60px; 
+    width: 200px; 
+    height: 200px; 
 }
 
 /* 모바일 최적화 */
