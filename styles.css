@@ -82,7 +82,8 @@ button:hover {
     font-size: 1.8em;
     font-weight: bold;
 }
-.character-image {
+
+#character-image {
     width: 100%;
     max-width: 200px;
     height: auto;
